@@ -1,0 +1,59 @@
+/* recipes.css */
+
+/* Recipe card container */
+.recipe-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+  }
+  
+  /* Recipe name */
+  .recipe-card .recipe-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Category */
+  .recipe-card .category-label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .recipe-card .category {
+    margin-bottom: 10px;
+  }
+  
+  /* Ingredients list */
+  .recipe-card .ingredients {
+    font-size: 16px;
+  }
+  
+  /* Ingredient item */
+  .recipe-card .ingredient {
+    margin-top: 5px;
+  }
+  
+  /* Ingredient name and measurement */
+  .recipe-card .ingredient-name,
+  .recipe-card .ingredient-measurement {
+    font-weight: bold;
+  }
+  
+  /* Center the "Create Recipe" button */
+#create-recipe-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: rgb(196, 245, 196);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Adjust button styling as needed */
+  

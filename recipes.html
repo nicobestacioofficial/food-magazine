@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="recipes.css" />
+    <title>Recipe Details</title>
+  </head>
+  <body>
+    <div class="recipe-container">
+      <h2>Recipe Details</h2>
+
+      <!-- Filter by category dropdown -->
+      <label for="filter-category">Filter by Category:</label>
+      <select id="filter-category">
+        <option value="">All</option>
+        <option value="Burgers">Burgers</option>
+        <option value="Pasta">Pasta</option>
+      </select>
+
+      <!-- Recipe card 1 (Chilli Hotdog) -->
+      <div class="recipe-card" id="recipe-card-1">
+        <div class="recipe-name">Chilli Hotdog</div>
+        <div class="category">Category: Burgers</div>
+        <div class="ingredient-measurement">
+          Ingredients: Hotdog (110 grams), Bread (1 pcs), Chilli Beef (1 sachet)
+        </div>
+        <div class="crud-buttons">
+          <button onclick="editRecipe(1)">Edit</button>
+          <button onclick="deleteRecipe(1)">Delete</button>
+        </div>
+      </div>
+
+      <!-- Recipe card 2 (Cheeze Burger) -->
+      <div class="recipe-card" id="recipe-card-2">
+        <div class="recipe-name">Cheeze Burger</div>
+        <div class="category">Category: Burgers</div>
+        <div class="ingredient-measurement">
+          Ingredients: Patty (110 grams), Bread (1 pcs), Cheeze (2 pcs)
+        </div>
+        <div class="crud-buttons">
+          <button onclick="editRecipe(2)">Edit</button>
+          <button onclick="deleteRecipe(2)">Delete</button>
+        </div>
+      </div>
+
+      <!-- Recipe card 3 (Spaghetti) -->
+      <div class="recipe-card" id="recipe-card-3">
+        <div class="recipe-name">Spaghetti</div>
+        <div class="category">Category: Pasta</div>
+        <div class="ingredient-measurement">
+          Ingredients: Tomato Sauce (900ml), Pasta (1 kilo), Cheeze (2 pcs),
+          Hotdog (1/2 kilo)
+        </div>
+        <div class="crud-buttons">
+          <button onclick="editRecipe(3)">Edit</button>
+          <button onclick="deleteRecipe(3)">Delete</button>
+        </div>
+      </div>
+
+      <!-- Create Recipe button -->
+      <button id="create-recipe-btn" onclick="createNewRecipe()">
+        Create Recipe
+      </button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
